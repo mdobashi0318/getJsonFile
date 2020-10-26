@@ -12,6 +12,7 @@ struct UsersModel: Codable {
     let name: String
     let age: String?
     let childUsers: [UsersModel]?
+    let image: String?
     
     
     

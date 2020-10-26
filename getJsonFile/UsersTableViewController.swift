@@ -17,8 +17,7 @@ class UsersTableViewController: UITableViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+        self.tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
         model = UsersModel.fetchUsers()
     }
 
@@ -37,17 +36,19 @@ class UsersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if let model = model {
-            print(model[indexPath.row])
+        if let model = model?[indexPath.section].childUsers?[indexPath.row] {
+            print(model)
         }
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CustomCell else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = model?[indexPath.section].childUsers?[indexPath.row].name
+
+        
+        cell.setUp(name: model?[indexPath.section].childUsers?[indexPath.row].name, image: model?[indexPath.section].image)
         
         return cell
     }
@@ -55,6 +56,11 @@ class UsersTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return model?[section].name
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
 }

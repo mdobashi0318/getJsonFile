@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05238382545842C00E9E6A5 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05238372545842B00E9E6A5 /* CustomCell.xib */; };
+		D052383B2545847900E9E6A5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052383A2545847900E9E6A5 /* CustomCell.swift */; };
 		D058FE652544141F00DF6102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058FE642544141F00DF6102 /* AppDelegate.swift */; };
 		D058FE672544141F00DF6102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058FE662544141F00DF6102 /* SceneDelegate.swift */; };
 		D058FE692544141F00DF6102 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058FE682544141F00DF6102 /* UsersTableViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D05238372545842B00E9E6A5 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		D052383A2545847900E9E6A5 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		D058FE612544141F00DF6102 /* getJsonFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getJsonFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D058FE642544141F00DF6102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D058FE662544141F00DF6102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				D058FE662544141F00DF6102 /* SceneDelegate.swift */,
 				D058FE682544141F00DF6102 /* UsersTableViewController.swift */,
 				D0CEA1EB25442398004BF3A0 /* UsersTableViewController.storyboard */,
+				D052383A2545847900E9E6A5 /* CustomCell.swift */,
+				D05238372545842B00E9E6A5 /* CustomCell.xib */,
 				D058FE802544163B00DF6102 /* UsersModel.swift */,
 				D058FE792544153C00DF6102 /* Users.json */,
 				D058FE6D2544142400DF6102 /* Assets.xcassets */,
@@ -130,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05238382545842C00E9E6A5 /* CustomCell.xib in Resources */,
 				D058FE7A2544153D00DF6102 /* Users.json in Resources */,
 				D058FE712544142400DF6102 /* LaunchScreen.storyboard in Resources */,
 				D058FE6E2544142400DF6102 /* Assets.xcassets in Resources */,
@@ -146,6 +153,7 @@
 			files = (
 				D058FE692544141F00DF6102 /* UsersTableViewController.swift in Sources */,
 				D058FE652544141F00DF6102 /* AppDelegate.swift in Sources */,
+				D052383B2545847900E9E6A5 /* CustomCell.swift in Sources */,
 				D058FE812544163B00DF6102 /* UsersModel.swift in Sources */,
 				D058FE672544141F00DF6102 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPFL7EXKD;
 				INFOPLIST_FILE = getJsonFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RPFL7EXKD;
 				INFOPLIST_FILE = getJsonFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
